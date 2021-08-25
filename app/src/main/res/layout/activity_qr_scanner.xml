@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/backgraund_gradient">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <LinearLayout
+                android:id="@+id/result_scanner_view"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_height="match_parent" />
+        </ScrollView>
+        <com.example.els_v2.Code_ScannerView
+            android:id="@+id/scanner_view"
+            android:layout_width="match_parent"
+            android:layout_height="480dp"
+            app:autoFocusButtonColor="#32A9FF"
+            app:autoFocusButtonVisible="true"
+            app:flashButtonColor="#32A9FF"
+
+            app:flashButtonVisible="true"
+            app:frameColor="#32A9FF"
+            app:frameCornersSize="70dp"
+            app:frameCornersRadius="0dp"
+            app:frameAspectRatioWidth="1"
+
+            app:frameAspectRatioHeight="1"
+            app:frameSize="0.75"
+            app:frameThickness="2dp"
+            app:maskColor="#77000000">
+
+        </com.example.els_v2.Code_ScannerView>
+
+
+        <Button
+            android:id="@+id/btn_show_list"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#49a09d"
+            android:text="Listeyi Görüntüle"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+</RelativeLayout>

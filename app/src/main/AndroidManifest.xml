@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.els_v2">
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_app2"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_appicon_round"
+        android:supportsRtl="true"
+        android:requestLegacyExternalStorage="true"
+
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"
+                    android:screenOrientation="portrait"/>
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".QrScannerActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".InfoActivity"
+            android:theme="@style/AppTheme.CustomTheme"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".CreatePdfActivity"
+            android:theme="@style/AppTheme.CustomTheme"
+            android:windowSoftInputMode="adjustResize"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".ResultViewActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="adjustNothing"
+
+            android:screenOrientation="portrait">
+        </activity>
+    </application>
+
+</manifest>
